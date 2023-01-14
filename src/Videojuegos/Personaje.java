@@ -21,9 +21,10 @@ public abstract class Personaje
 
     protected void verPersonaje(String tipo)
     {
-        System.out.println("***" + tipo + "****");
+        System.out.println("\n***" + tipo + "****");
         System.out.println("* " + nombre);
         System.out.println("* " + vida);
+        System.out.println("* " + mana);
         System.out.println("* " + estado);
     }
     protected abstract void danioTotal();
