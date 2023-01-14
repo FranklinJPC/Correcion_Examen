@@ -11,17 +11,17 @@ public class Enemigos extends Personaje
     private double armaduraEnemiga;
     private double armaduraTotal;
     public Enemigos(int vida, double armadura, double danio, int mana, boolean estado, String nombre, String clan) {
-        super(vida, armadura, danio, mana, estado, nombre);
+        super(vida, armadura, danio, mana, estado, nombre, "Enemigos");
         this.clan = clan;
         this.danioEnemigosBase = danio * 0.75;
         this.armaduraEnemiga = armadura * 0.52;
         defensaTotal();
         danioTotal();
-        verPersonaje();
+        //verPersonaje();
     }
 
     public void verPersonaje() {
-        super.verPersonaje("ENEMIGOS");
+        super.verPersonaje();
         System.out.println("* " + clan);
         System.out.println("* " + dft.format(danioTotal) + "%");
         System.out.println("* " + dft.format(armaduraTotal) + "%");

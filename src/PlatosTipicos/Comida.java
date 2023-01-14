@@ -13,7 +13,7 @@ public abstract class Comida
         this.regionOrigen = regionOrigen;
     }
 
-    protected void verPlato()
+    public void verPlato()
     {
         System.out.println("\n\t\t****Platos tipicos****\n");
         System.out.println("Nombre: " +  nombrePlato);

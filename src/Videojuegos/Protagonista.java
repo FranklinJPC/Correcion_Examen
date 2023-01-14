@@ -11,7 +11,7 @@ public class Protagonista extends Personaje
     private double armaduraBase;
     private double armaduraTotal;
     public Protagonista(int vida, double armadura, double danio, int mana, boolean estado, String nombre, String clase) {
-        super(vida, armadura, danio, mana, estado, nombre);
+        super(vida, armadura, danio, mana, estado, nombre, "Protragonista");
         this.clase = clase;
         this.danioAliadobase = danio * 0.71;
         this.armaduraBase = armadura * 0.95;
@@ -21,7 +21,7 @@ public class Protagonista extends Personaje
     }
 
     public void verPersonaje() {
-        super.verPersonaje("Protagonista");
+        super.verPersonaje();
         System.out.println("* " + clase);
         System.out.println("* " + dft.format(danioTotal) + "%");
         System.out.println("* " + dft.format(armaduraTotal) + "%");

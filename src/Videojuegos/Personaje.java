@@ -8,8 +8,9 @@ public abstract class Personaje
     private int mana;
     private boolean estado;
     private String nombre;
+    protected String tipo;
 
-    public Personaje(int vida,double armadura,double danio,int mana,boolean estado,String nombre)
+    public Personaje(int vida,double armadura,double danio,int mana,boolean estado,String nombre, String tipo)
     {
         this.vida = vida;
         this.armadura = armadura;
@@ -17,9 +18,10 @@ public abstract class Personaje
         this.mana = mana;
         this.estado = estado;
         this.nombre = nombre;
+        this.tipo = tipo;
     }
 
-    protected void verPersonaje(String tipo)
+    public void verPersonaje()
     {
         System.out.println("\n***" + tipo + "****");
         System.out.println("* " + nombre);

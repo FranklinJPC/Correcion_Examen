@@ -7,10 +7,9 @@ public class Sierra extends Comida
     {
         super(nombrePlato, cantidadIngredientes, "Sierra");
         this.ingredienteInsignia = ingredienteInsignia;
-        verPlato();
     }
 
-    protected void verPlato()
+    public void verPlato()
     {
         super.verPlato();
         System.out.println("Ingrdiente Principal: " + ingredienteInsignia);

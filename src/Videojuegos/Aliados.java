@@ -11,17 +11,17 @@ public class Aliados extends Personaje
     private double armaduraAliada;
     private double armaduraTotal;
     public Aliados(int vida, double armadura, double danio, int mana, boolean estado, String nombre, String clan) {
-        super(vida, armadura, danio, mana, estado, nombre);
+        super(vida, armadura, danio, mana, estado, nombre, "Alianza");
         this.clan = clan;
         this.danioAliadobase = danio * 0.65;
         this.armaduraAliada = armadura * 0.80;
         defensaTotal();
         danioTotal();
-        verPersonaje();
+        //verPersonaje();
     }
 
     public void verPersonaje() {
-        super.verPersonaje("ALIADOS");
+        super.verPersonaje();
         System.out.println("* " + clan);
         System.out.println("* " + dft.format(danioTotal) + "%");
         System.out.println("* " + dft.format(armaduraTotal) + "%");
